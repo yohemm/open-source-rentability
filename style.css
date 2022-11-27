@@ -1,7 +1,20 @@
 :root {
-    --light: hsl(342, 33%, 94%);
-    --dark: hsl(0, 2%, 9%);
-    --grey: hsl(336, 3%, 63%);
+    --white: #e2fdff;
+    --main: #5465ff;
+    --mainLight: #788bff;
+    --details: #a480cf;
+    --secondLight: #d264b6;
+    --second: #ff499e;
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+
 }
 
 nav {

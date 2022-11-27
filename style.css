@@ -17,6 +17,41 @@
 
 }
 
+body{
+    background: var(--white);
+
+}
+
+main{
+    margin: 0vh 2vw;
+    box-shadow: var(--mainLight) 0px -6px 15px 3px;
+    padding: 10px;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+}
+main section h2{
+    flex-basis: 100%;
+}
+
+h1, h2{
+    background: linear-gradient(0.25turn, var(--second) 0, var(--secondLight) 10% , var(--details) 20%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+main section blockquote{
+    width: 60%;
+}
+main section img{
+    width: 40%;
+}
+
+/* MENU NAV */
 nav {
     height: 0vh;
     width: 100%;
@@ -24,3 +59,50 @@ nav {
     position: sticky;
 }
 
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    background: black;
+}
+
+nav > ul > li {
+    position: relative;
+    width: 25%;
+    height: 100%;
+}
+
+nav > ul > li > a {
+    text-align: center;
+}
+
+
+.menu-deroulant:hover .submenu{
+    max-height: 5000px;
+}
+
+
+
+
+
+nav ul li a {
+    color: red;
+    width: 100%;
+    display: inline-block;
+}
+
+.submenu {
+    max-height: 0px;
+    padding-left:  0;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1000;
+    transition: transform 1s ease-in-out;
+    display: block;
+    background-color: aqua;
+}
+
+nav li {
+    list-style-type: none;
+}

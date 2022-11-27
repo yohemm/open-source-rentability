@@ -1,0 +1,13 @@
+:root {
+    --light: hsl(342, 33%, 94%);
+    --dark: hsl(0, 2%, 9%);
+    --grey: hsl(336, 3%, 63%);
+}
+
+nav {
+    height: 0vh;
+    width: 100%;
+    top: 0;
+    position: sticky;
+}
+

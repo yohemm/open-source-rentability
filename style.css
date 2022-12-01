@@ -5,6 +5,7 @@
     --details: #a480cf;
     --secondLight: #d264b6;
     --second: #ff499e;
+    --dark: #14161d;
 }
 
 *, ::after, ::before{
@@ -28,16 +29,9 @@ main{
     padding: 10px;
 }
 
-main section{
-    display: flex;
-    flex-wrap: wrap;
-}
-main section h2{
-    flex-basis: 100%;
-}
 
 h1, h2{
-    background: linear-gradient(0.25turn, var(--second) 0, var(--secondLight) 10% , var(--details) 20%);
+    background: linear-gradient(0.25turn, var(--second) 0, var(--secondLight) 10% , var(--details) 15%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -105,4 +99,72 @@ nav ul li a {
 
 nav li {
     list-style-type: none;
+}
+
+
+#pestel section{
+    display: flex;
+    flex-wrap: wrap;
+}
+#pestel section h2{
+    flex-basis: 100%;
+}
+#pestel section blockquote{
+    margin-left: 6vw;
+    position: relative;
+    padding: 10px;
+}
+#pestel section blockquote::after, #pestel section blockquote::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+#pestel section blockquote::after{
+    position: absolute;
+    border-left: 1px solid var(--dark);
+    border-bottom:1px solid var(--dark);
+    bottom: 0;
+    left: 0;
+}
+#pestel section blockquote::before{
+    position: absolute;
+    border-top:1px solid var(--dark);
+    border-right:1px solid var(--dark);
+    top: 0;
+    right: 0;
+}
+#pestel section P{
+    line-height: 1.4rem;
+}
+#pestel section h2{
+    position: relative;
+    margin-top: 10px;
+}
+#pestel section h2::after{
+    content: '';
+    position: absolute;
+    border-width: 3px;
+    
+    border-image: linear-gradient(
+        to right, 
+        var(--secondLight), 
+        var(--mainLight)
+      )100% 1;
+    border-style: solid;
+    border-radius: 15px;
+    width: calc(100% - (60px)*2);
+    left: 60px;
+}
+@media screen and (max-width: 600px ) {
+    main{
+        margin: 0px;
+    }
+    #pestel section{
+        display: block;
+    }
+    #pestel section blockquote{
+        width: 90%;
+    }
+    
 }

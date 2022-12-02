@@ -42,7 +42,8 @@ main section blockquote{
     width: 60%;
 }
 main section img{
-    width: 40%;
+    width: 25%;
+    margin: auto;
 }
 
 /* MENU NAV */
@@ -161,7 +162,11 @@ nav li {
         margin: 0px;
     }
     #pestel section{
-        display: block;
+        display: inline-block;
+    }
+    #pestel section img{
+        margin: 20px 0;
+        width: 80%;
     }
     #pestel section blockquote{
         width: 90%;

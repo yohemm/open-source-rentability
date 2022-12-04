@@ -1,0 +1,174 @@
+:root {
+    --white: #e2fdff;
+    --main: #5465ff;
+    --mainLight: #788bff;
+    --details: #a480cf;
+    --secondLight: #d264b6;
+    --second: #ff499e;
+    --dark: #14161d;
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body{
+    background: var(--white);
+}
+
+main{
+    margin: 0vh 2vw;
+    box-shadow: var(--mainLight) 0px -6px 15px 3px;
+    padding: 10px;
+}
+
+
+h1, h2{
+    background: linear-gradient(0.25turn, var(--second) 0, var(--secondLight) 10% , var(--details) 15%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+main section blockquote{
+    width: 60%;
+}
+main section img{
+    width: 25%;
+    margin: auto;
+}
+
+/* MENU NAV */
+nav {
+    height: 0vh;
+    width: 100%;
+    top: 0;
+    position: sticky;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    background: black;
+}
+
+nav > ul > li {
+    position: relative;
+    width: 25%;
+    height: 100%;
+}
+
+nav > ul > li > a {
+    text-align: center;
+}
+
+
+.menu-deroulant:hover .submenu{
+    max-height: 5000px;
+}
+
+
+
+
+
+nav ul li a {
+    color: red;
+    width: 100%;
+    display: inline-block;
+}
+
+.submenu {
+    max-height: 0px;
+    padding-left:  0;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1000;
+    transition: transform 1s ease-in-out;
+    display: block;
+    background-color: aqua;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+
+#pestel section{
+    display: flex;
+    flex-wrap: wrap;
+}
+#pestel section h2{
+    flex-basis: 100%;
+}
+#pestel section blockquote{
+    margin-left: 6vw;
+    position: relative;
+    padding: 10px;
+}
+#pestel section blockquote::after, #pestel section blockquote::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+#pestel section blockquote::after{
+    position: absolute;
+    border-left: 1px solid var(--dark);
+    border-bottom:1px solid var(--dark);
+    bottom: 0;
+    left: 0;
+}
+#pestel section blockquote::before{
+    position: absolute;
+    border-top:1px solid var(--dark);
+    border-right:1px solid var(--dark);
+    top: 0;
+    right: 0;
+}
+#pestel section P{
+    line-height: 1.4rem;
+}
+#pestel section h2{
+    position: relative;
+    margin-top: 10px;
+}
+#pestel section h2::after{
+    content: '';
+    position: absolute;
+    border-width: 3px;
+    
+    border-image: linear-gradient(
+        to right, 
+        var(--secondLight), 
+        var(--mainLight)
+      )100% 1;
+    border-style: solid;
+    border-radius: 15px;
+    width: calc(100% - (60px)*2);
+    left: 60px;
+}
+@media screen and (max-width: 600px ) {
+    main{
+        margin: 0px;
+    }
+    #pestel section{
+        display: inline-block;
+    }
+    #pestel section img{
+        margin: 20px 0;
+        width: 80%;
+    }
+    #pestel section blockquote{
+        width: 90%;
+    }
+    
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="c-header"></div>
+            <input id="btnToggle" type="checkbox" class="c-btn-toggle">
+            <label class="c-btn-icon" for="btnToggle">
+                <div class="c-btn-bar c-btn-bar--diagonal diagonal-1"></div>
+                <div class="c-btn-bar c-btn-bar--horizontal"></div>
+                <div class="c-btn-bar c-btn-bar--diagonal diagonal-2"></div>
+            </label>
+        <ul class="nav-links">
+            <a href="#" class="logo">Freedom</a>
+            <li>
+            <a class="titre" href="index.html">Accueil</a>
+            </li>
+            <li class="menu-deroulant">
+                <a class="titre" href="analyse.html">Pestel</a>
+                <ul class="submenu">
+                    <li><a href="analyse.html#politique">Politics</a></li>
+                    <li><a href="analyse.html#economique">Economic</a></li>  <!--Traduire en anglais les titres pour donner un effets international au site-->
+                    <li><a href="analyse.html#social">Social</a></li>
+                    <li><a href="analyse.html#tech">Technologique</a></li>
+                    <li><a href="analyse.html#legal">Légal</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="titre" href="chronologie.html">Chronologie</a>
+            </li>
+            <li>
+                <a class="titre" href="contact.html">Contact</a>   <!--A travailler la partit php une fois finis-->
+            </li>
+        </ul>
+    </nav>
+</header>
+    <main id="contact">
+      <h1>Nous contactez :</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam hic assumenda voluptatibus adipisci consectetur distinctio eaque cumque, dignissimos quo illo! Obcaecati nemo incidunt culpa est, consequatur numquam veritatis dignissimos suscipit. Numquam eum laudantium dolores laborum. Error obcaecati impedit similique odit, maiores at quos, nam inventore voluptatum, facilis modi placeat necessitatibus! Atque modi odio, odit deleniti debitis suscipit, reprehenderit perspiciatis quasi ipsum excepturi alias voluptatum ad earum soluta iste magni deserunt tempore vel! Modi aut porro inventore tenetur doloremque, velit repellendus!</p>
+      <form action="index.html">
+        <fieldset>
+          <legend>Nous contactez</legend>
+          <div class="input-container">veuillez saisir votre email : <label for="email"><input type="text" name="email" id="email" placeholder="Exemple@monEmail.com"></div>
+          <div class="input-container">veuillez saisir votre message : <label for="message"><textarea name="message" id="message" cols="30" rows="10" placeholder="Vous avez trouvez un bug? vous avez des questions? Vous êtes au bon endroit!"></textarea></div>
+          <div class="input-container"><input type="submit" value="Envoyer" id="sub"></div>
+          <p>*Nos vous reponderons le plus vite possible, veuillez nous escuse de possible attente...</p>
+        </fieldset>
+      </form>
+    </main>
+    
+</body>
+</html>

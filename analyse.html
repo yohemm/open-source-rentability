@@ -5,9 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="c-header"></div>
+                <input id="btnToggle" type="checkbox" class="c-btn-toggle">
+                <label class="c-btn-icon" for="btnToggle">
+                    <div class="c-btn-bar c-btn-bar--diagonal diagonal-1"></div>
+                    <div class="c-btn-bar c-btn-bar--horizontal"></div>
+                    <div class="c-btn-bar c-btn-bar--diagonal diagonal-2"></div>
+                </label>
+            <ul class="nav-links">
+                <a href="#" class="logo">Freedom</a>
+                <li>
+                <a class="titre" href="index.html">Accueil</a>
+                </li>
+                <li class="menu-deroulant">
+                    <a class="titre" href="analyse.html">Pestel</a>
+                    <ul class="submenu">
+                        <li><a href="analyse.html#politique">Politics</a></li>
+                        <li><a href="analyse.html#economique">Economic</a></li>  <!--Traduire en anglais les titres pour donner un effets international au site-->
+                        <li><a href="analyse.html#social">Social</a></li>
+                        <li><a href="analyse.html#tech">Technologique</a></li>
+                        <li><a href="analyse.html#legal">Légal</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="titre" href="chronologie.html">Chronologie</a>
+                </li>
+                <li>
+                    <a class="titre" href="contact.html">Contact</a>   <!--A travailler la partit php une fois finis-->
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main id="pestel">
         
         <h1>Analyse Pestel</h1>

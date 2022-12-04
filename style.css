@@ -17,12 +17,22 @@
 }
 
 body {
-    background: url(img/background3.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-}  
+    background: black;
+}
 
+.presentation  {
+    margin: 10vh;
+}
+
+.presentation h1 {
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.presentation p {
+    color: white;
+    margin-bottom: 1vh;
+}
 
 h1 {
     z-index: 1;

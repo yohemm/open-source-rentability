@@ -108,6 +108,8 @@ main img.logo-presentation{
     color: #FFF;
     font-size: 1.3em;
     margin-top: 30px;
+    margin-left: 40px;
+    width: 4rem;
 }
 
 .timeline-items-details-date, .timeline-items-details-marker, .timeline-items-details-description {
@@ -122,8 +124,8 @@ main img.logo-presentation{
     width: 32px;
     height: 32px;
     border: 3px solid #FFF;
-    margin-top: 1.5vw;
-    margin-left: 9vw;
+    margin-top: 30px;
+    margin-left: calc(12.5vw - calc(4rem + 55px));
     transition: transform .3s, background-color .3s;
 }
 
@@ -134,13 +136,12 @@ main img.logo-presentation{
 
 .timeline-items-details-description {
     padding: 16px;
+    position: relative;
     color: #333;
     background-color: #FFF;
     width: 10vw;
     border-radius: 5px;
     margin-left: 4vw;
-    margin-top: -2vw;
-    margin-bottom: 5vw;
     word-wrap: break-word;
 }
 
@@ -148,11 +149,10 @@ main img.logo-presentation{
     content: '';
     position: absolute;
     background-color: #FFF;
-    width: 70px;
-    height: 3px;
-    margin-left: -80px;
-    margin-top: 3.5vw;
-    align-items: center;
+    top: 45px;
+    width: 4vw;
+    height: 4px;
+    left: -4vw;
 }
 
 
@@ -174,7 +174,9 @@ a.titre {
     margin:  20px 0px 20px 0px;
 }
 
-
+.nav-links  {
+    margin: 0;
+}
 
 nav > ul > li {
     position: relative;
@@ -206,7 +208,7 @@ nav ul li a {
     width: 100%;
     overflow: hidden;
     position: absolute;
-    z-index: 1000;
+    z-index: 5;
     transition: transform 1s ease-in-out;
     display: block;
     background: rgba(192, 192, 192, 0.3);
@@ -255,7 +257,8 @@ input[type="checkbox"] {
     .c-header {
         width: 100%;
         height: 60px;
-        position: fixed;
+        top: 0;
+        position: absolute;
     }
 
 
@@ -306,8 +309,6 @@ input[type="checkbox"] {
        transition: all .3s;
     }
 
-    
-
     input[type="checkbox"]:checked ~ .c-btn-icon > .c-btn-bar--horizontal {
         opacity: 0;
     }
@@ -325,7 +326,7 @@ input[type="checkbox"] {
     }
 
     input[type="checkbox"]:checked ~ .nav-links {
-        transform: translateX(0);
+        transform: translateX(-40vw);
     }    
 
     .nav-links {

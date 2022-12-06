@@ -1,0 +1,151 @@
+:root {
+    --white: #e2fdff;
+    --main: #7e1c0b;
+    --mainLight: #8f3c2d;
+    --details: #e29a3c;
+    --secondLight: #b85f44;
+    --second: #c94d27;
+    --dark: #14161d;
+    --grey: #444444;
+  }
+  
+  *, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    
+  }
+  
+  body{
+    background: var(--white);
+    
+  }
+  
+  main{
+    margin: 0vh 2vw;
+    box-shadow: var(--mainLight) 0px -6px 15px 3px;
+    padding: 20px;
+    margin-top: 70px;
+  }
+  
+  
+  h1, h2{
+    background: linear-gradient(0.25turn, var(--second) 0, var(--secondLight) 10% , var(--details) 15%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+  
+  
+  /* HEADER */
+  nav {
+    height: 0vh;
+    width: 100%;
+    top: 0;
+    position: sticky;
+  }
+  
+  nav > ul {
+    display: flex;
+    justify-content: space-around;
+    background: var(--dark);
+  }
+  
+  a.titre {
+    margin:  20px 0px 20px 0px;
+  }
+  
+  
+  
+  nav > ul > li {
+    position: relative;
+    width: 25%;
+    height: 100%;
+  }
+  
+  nav > ul > li > a {
+    text-align: center;
+  }
+  
+  
+  .menu-deroulant:hover .submenu{
+    max-height: 5000px;
+  }
+  
+  
+  nav ul li a {
+    color: transparent;
+    font-size: 1.5vw;
+    width: 100%;
+    display: inline-block;
+    -webkit-text-stroke: 0.5px var(--main);
+  }
+  
+  .submenu {
+    max-height: 0px;
+    padding-left:  0;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1000;
+    transition: transform 1s ease-in-out;
+    display: block;
+    background: var(--grey);
+  }
+  .submenu a {
+    margin: 2vw 0vw 2vw 0px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--main);
+    -webkit-text-stroke: 1px var(--white);
+  }
+  
+  
+  
+  header .navbar .logo {
+    font-size: 30px;
+    font-weight: bold;
+  margin-left: 0.5vw;
+    margin-top: 1vw;
+  text-transform: uppercase;
+    background: linear-gradient(0.25turn, var(--second) 0, var(--secondLight) 10% , var(--details) 20%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+  nav li {
+    list-style-type: none;
+  }
+  
+  .navbar .menuburger {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    width: 55px;
+  }
+  
+  
+  @media screen and (max-width: 1000px) {
+    .navbar {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+  }
+
+    nav > a {
+        width: auto;
+    }

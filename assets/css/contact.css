@@ -1,0 +1,43 @@
+.input-container{
+  margin-bottom: 3vh;
+}
+form{
+  padding-top: 40px;
+}
+fieldset{
+  border: 2px solid var(--dark);
+  border-radius: 10px;
+  padding: 25px;
+}
+input{
+  border-left: 1px solid var(--dark);
+  border-right: 1px solid var(--dark);
+}
+input, textarea{
+  transition: all 0.2s ease-in;
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 4px solid var(--dark);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border-radius: 16px;
+}
+
+textarea{
+  border-left: 4px solid var(--dark);
+  border-right: 4px solid var(--dark);
+  
+}
+legend, label{
+  font-size: 1.5rem;
+}
+input[type="submit"]{
+  border-top: 4px solid var(--grey);
+  background: var(--second);
+}
+input[type="submit"]:hover{
+  border-bottom: 4px solid var(--grey);
+  border-top: 4px solid var(--dark);
+  background: var(--second);
+}

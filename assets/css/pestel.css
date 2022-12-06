@@ -1,0 +1,81 @@
+main section .desc{
+    width: 50%;
+}
+main section .img{
+    width: 40%;
+}
+main section .img img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+#pestel section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(6px + 3vh);
+    position: relative;
+    justify-content: space-around;
+}
+#pestel section::before{
+    content: '';
+    position: absolute;
+    
+    border-image: linear-gradient(
+        to right, 
+        var(--secondLight), 
+        var(--mainLight)
+      )100% 1;
+    border-style: solid;
+    border-radius: 15px;
+    width: calc(100% - (60px)*2);
+    left: 60px;
+}
+#pestel section h2{
+    flex-basis: 100%;
+}
+#pestel section blockquote{
+    margin-left: 6vw;
+    position: relative;
+    padding: 10px;
+}
+#pestel section blockquote::after, #pestel section blockquote::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+#pestel section blockquote::after{
+    position: absolute;
+    border-left: 1px solid var(--dark);
+    border-bottom:1px solid var(--dark);
+    bottom: 0;
+    left: 0;
+}
+#pestel section blockquote::before{
+    position: absolute;
+    border-top:1px solid var(--dark);
+    border-right:1px solid var(--dark);
+    top: 0;
+    right: 0;
+}
+#pestel section P{
+    line-height: 1.4rem;
+}
+#pestel section h2{
+    margin-top: 2vh;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 600px ) {
+    main{
+        margin: 0px;
+    }
+    #pestel section{
+        display: block;
+    }
+    #pestel section div{
+        width: 90%;
+        text-align: center;
+    }
+    
+}

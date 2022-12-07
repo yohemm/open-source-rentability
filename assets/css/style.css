@@ -1,5 +1,5 @@
 :root {
-  --white: #f8eaea;
+  --white: #e5e5e5;
   --main: #7e1c0b;
   --mainLight: #8f3c2d;
   --details: #e29a3c;
@@ -10,7 +10,9 @@
   --redLight: #f43b47;
   --blueLight: #453a94;
 }
-
+main{
+  overflow-x: hidden;
+}
 *, ::after, ::before{
   box-sizing: border-box;
   margin: 0;
@@ -63,6 +65,7 @@ nav {
 }
 
 .nav-links {
+      border-bottom: 4px solid var(--dark);
       display: flex;
       position: fixed;
       background-color: var(--white);
@@ -77,6 +80,7 @@ nav {
 nav > ul {
   justify-content: space-around;
   background: var(--dark);
+  width: 100%;
 }
 
 a.titre {
@@ -84,7 +88,7 @@ a.titre {
 }
 
 a.titre:hover {
-  color: black;
+  color: var(--dark);
 }
 
 
@@ -108,10 +112,12 @@ nav ul li a {
   font-size: 1.5vw;
   width: 100%;
   display: block;
-  -webkit-text-stroke: 0.5px black;
+  -webkit-text-stroke: 0.5px var(--dark);
 }
 
 .submenu {
+  border-right: 4px solid var(--dark);
+  border-left: 4px solid var(--dark);
   max-height: 0px;
   padding-left:  0;
   text-align: center;
@@ -119,19 +125,19 @@ nav ul li a {
   overflow: hidden;
   position: absolute;
   z-index: 10;
-  transition: transform 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
   display: inline-block;
-  background: white;
+  background: var(--white);
 }
 .submenu a {
   margin: 2vw 0vw 2vw 0px;
-  font-size: 1.5vw;
-  color: black;
+  font-size: 1.5rem;
+  color: var(--dark);
 }
 
 .submenu li {
   border-bottom: 4px solid;
-  border-color: black;
+  border-color: var(--dark);
 }
 
 .submenu a:hover {
@@ -242,7 +248,10 @@ input[type="checkbox"] {
   }
 
   
-
+  nav ul li a{
+    font-size: 2.5rem;
+    width: 100%;
+  }
   input[type="checkbox"]:checked ~ .c-btn-icon > .c-btn-bar--horizontal {
       opacity: 0;
   }
@@ -284,6 +293,14 @@ input[type="checkbox"] {
 
   
 
+  .nav-links li {
+    border-top: 4px solid var(--dark) ;
+      width:  100%;
+  }
+  .nav-links li a {
+      width:  100%;
+      text-align: center;
+  }
   .nav-links .menu-deroulant li {
       display: none;
   }
@@ -291,6 +308,10 @@ input[type="checkbox"] {
   .presentation p {
     min-width: 20vw;
   }
+  main{
+    margin: 0;
+  }
+  
   
 
 }

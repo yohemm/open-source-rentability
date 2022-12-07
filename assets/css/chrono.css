@@ -73,6 +73,7 @@
   border-radius: 5px;
   margin-left: 4vw;
   word-wrap: break-word;
+  min-width: 200px;
 }
 
 .timeline-items-details-description::before {

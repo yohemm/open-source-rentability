@@ -34,10 +34,11 @@ legend, label{
 }
 input[type="submit"]{
   border-top: 4px solid var(--grey);
-  background: var(--second);
+  background: var(--blueLight);
+  color: var(--white);
 }
 input[type="submit"]:hover{
   border-bottom: 4px solid var(--grey);
   border-top: 4px solid var(--dark);
-  background: var(--second);
+  background: var(--blueLight);
 }

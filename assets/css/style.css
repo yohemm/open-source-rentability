@@ -1,5 +1,5 @@
 :root {
-  --white: #e2fdff;
+  --white: #f8eaea;
   --main: #7e1c0b;
   --mainLight: #8f3c2d;
   --details: #e29a3c;
@@ -7,6 +7,8 @@
   --second: #c94d27;
   --dark: #14161d;
   --grey: #444444;
+  --redLight: #f43b47;
+  --blueLight: #453a94;
 }
 
 *, ::after, ::before{
@@ -34,7 +36,7 @@ main{
 
 
 h1, h2{
-  background: linear-gradient(0.25turn, var(--second) 0, var(--secondLight) 10% , var(--details) 15%);
+  background-image: linear-gradient(to top, var(--redLight) 0%, var(--blueLight) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -43,6 +45,10 @@ h1, h2{
 
 .presentation  h1 {
   margin: 2vh 0 2vh 0;
+}
+
+.presentation > p {
+  margin: 10px;
 }
 
 
@@ -62,6 +68,7 @@ nav {
       background-color: var(--white);
       backdrop-filter: blur(8px);
       width: 100%;
+      height: 70px;
       z-index: 10;
   }
 
@@ -76,6 +83,9 @@ a.titre {
   margin:  20px 0px 20px 0px;
 }
 
+a.titre:hover {
+  color: black;
+}
 
 
 nav > ul > li {
@@ -93,13 +103,12 @@ nav > ul > li > a {
   max-height: 5000px;
 }
 
-
 nav ul li a {
   color: transparent;
   font-size: 1.5vw;
   width: 100%;
   display: block;
-  -webkit-text-stroke: 0.5px var(--main);
+  -webkit-text-stroke: 0.5px black;
 }
 
 .submenu {
@@ -112,14 +121,25 @@ nav ul li a {
   z-index: 10;
   transition: transform 1s ease-in-out;
   display: inline-block;
-  background: var(--grey);
+  background: white;
 }
 .submenu a {
   margin: 2vw 0vw 2vw 0px;
   font-size: 1.5vw;
-  font-weight: bold;
-  color: var(--main);
-  -webkit-text-stroke: 1px var(--white);
+  color: black;
+}
+
+.submenu li {
+  border-bottom: 4px solid;
+  border-color: black;
+}
+
+.submenu a:hover {
+  background-image: linear-gradient(to top, var(--redLight) 0%, var(--blueLight) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -130,7 +150,7 @@ header .navbar .logo {
 margin-left: 0.5vw;
   margin-top: 1vw;
 text-transform: uppercase;
-  background: linear-gradient(0.25turn, var(--second) 0, var(--secondLight) 10% , var(--details) 20%);
+  background: linear-gradient(to left, var(--redLight) 0%, var(--blueLight) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -155,6 +175,8 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 1000px) {
+
+
   
   .logo {
     margin-bottom: 3vh;
@@ -166,10 +188,15 @@ input[type="checkbox"] {
       position: fixed;
   }
 
+  main {
+    margin-top: 0;
+  }
+
   .c-btn-icon {
-      position: absolute;
+      position: fixed;
+      z-index: 15;
       top: 20px;
-      left: 93.5vw;
+      left: 92vw;
       width: 32px;
       height: 32px;
       cursor: pointer;

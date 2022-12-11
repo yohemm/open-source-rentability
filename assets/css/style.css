@@ -180,8 +180,47 @@ input[type="checkbox"] {
   display: none;
 }
 
+
+footer {
+	margin: 0;
+	padding: 20px;
+	background-color: var(--dark);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+footer h3 {
+	color: var(--redLight);
+}
+
+footer p {
+  display: block;
+  text-decoration: none;
+	color: #ccc;
+}
+
+footer p:hover {
+	color: white;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.column {
+  position: relative;
+  left: -35vw;
+}
+
+
 @media screen and (max-width: 1000px) {
 
+  .column {
+    align-items: center;
+    left: 1vw;
+  }
 
   
   .logo {

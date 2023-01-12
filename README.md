@@ -1,10 +1,23 @@
-# Site web sur la rentabilité des logiciel open source
+# Open Source rentability
+A website about Open Source rentability.
 
----
-## Explication
-   Créer pour un projet de cours l'ors de la 1er année d'IUT à Séte
----
-## Support
+## Getting Started
 
-For support, email bloodoffairy@gmail.com or join our Slack channel.
+### Prerequisites
 
+- Python
+
+### Installation
+
+1. Clone the repository
+```git
+git clone https://github.com/yohemm/open-source-rentability.git
+```
+
+## Usage
+
+1. Oppen index.html
+
+## Authors
+
+* **Yohem** - *Initial work* - [Your GitHub username](https://github.com/yohemm)

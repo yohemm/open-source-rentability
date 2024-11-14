@@ -3,6 +3,16 @@
 
 <!-- ![Project Banner](path/to/banner/image)  -->
 
+## 🌟 Project Status
+
+> **Current Status**: **:brown_circle: Archived**  
+>
+> The study project was finished and archived.
+>
+> No maitained
+
+---
+
 ## Overview
 A basic web site about Open Source rentability.
 
